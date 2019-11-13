@@ -2,11 +2,9 @@ def prime? (number)
   if number < 2
   false 
   else 
-    (2..number).to
- number.collect do |numbers|
-    
-  end 
+    (2..number - 1).to_a.any? do |n|
+    number % n == 0 
+    end 
   
-  puts ("Be sure to account for negative numbers!")
-end 
+  end 
 end 
