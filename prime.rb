@@ -1,6 +1,6 @@
 def prime? (number)
-  if number.multiply 2 
-  
+  if number < 2
+  false 
   else 
  number.collect do |numbers|
     
